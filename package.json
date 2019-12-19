@@ -1,0 +1,38 @@
+{
+  "name": "ts-37-issue",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -b packages/tsconfig.json",
+    "clean": "lerna run clean --parallel",
+    "rebuild": "yarn clean && yarn build",
+    "start": "lerna run start --stream"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amirburbea/ts-37-issue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amirburbea/ts-37-issue/issues"
+  },
+  "homepage": "https://github.com/amirburbea/ts-37-issue#readme",
+  "devDependencies": {
+    "husky": "^3.1.0",
+    "lerna": "^3.19.0",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
+    "shx": "^0.3.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}

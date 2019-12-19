@@ -1,0 +1,21 @@
+{
+  "name": "@ts-37-issue/utilities",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "clean": "shx rm -rf lib && shx rm -f tsconfig.tsbuildinfo",
+    "build": "tsc -b"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^12.12.21",
+    "shx": "^0.3.2",
+    "typescript": "^3.7.3"
+  },
+  "dependencies": {
+    "tslib": "^1.10.0"
+  }
+}
