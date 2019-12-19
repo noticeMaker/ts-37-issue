@@ -1,7 +1,5 @@
-import { basename } from 'path';
-
-const utilities = () => {
-  console.log('@ts-37-issue/utilities was called in', basename(__dirname));
+const run = () => {
+  console.log('@ts-37-issue/utilities was called');
 };
 
-export default utilities;
+export default run;

@@ -7,7 +7,7 @@
     "build": "tsc -b packages/tsconfig.json",
     "clean": "lerna run clean --parallel",
     "rebuild": "yarn clean && yarn build",
-    "start": "lerna run start --stream"
+    "start": "yarn build && lerna run start --stream"
   },
   "workspaces": [
     "packages/*"
