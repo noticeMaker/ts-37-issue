@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "outDir": "lib",
-    "rootDir": "src"
+    "rootDir": "src",
+    "baseUrl": "../",
+    "paths": { "@issue/utilities": ["utilities"] }
   },
   "exclude": ["./lib/", "./node_modules/"],
   "extends": "../tsconfig.base.json",
