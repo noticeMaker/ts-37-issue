@@ -1,3 +1,3 @@
 export default function() {
-  console.log('@ts-37-issue/utilities was called');
+  console.log('@issue/utilities was called');
 }

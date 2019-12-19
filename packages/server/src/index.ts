@@ -1,4 +1,4 @@
-import run from '@ts-37-issue/utilities';
+import run from '@issue/utilities';
 
 console.log('Starting...');
 run();
